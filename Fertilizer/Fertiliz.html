@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri-Supply</title>
+
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+    <!-- styles  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <!-- NAV  -->
+        <div class="nav container">
+            <a href="/Agri-Index.html " class="logo"><span>Argi</span>Supply</a>
+            
+            <!-- CART ICON  -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <a href="/Checkout/checkout.html"> <button type="button" class="btn-buy">Buy Now</button></a>
+                
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title">Fertilizers</h2>
+
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="assets/img/KATYAYANI NPK 191919 WATER SOLUBLE FERTILIZER.png" alt="" class="product-img">
+                <h2 class="product-title"> KATYAYANI NPK 19:19:19 WATER SOLUBLE FERTILIZER</h2>
+                <span class="product-price"> ₹536 </span>
+                <h6 class="till">
+                    Katyayani NPK 19:19:19 is a water-soluble and balanced fertilizer that contains all the required nutrients for plants.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('KATYAYANI NPK 19:19:19 WATER SOLUBLE FERTILIZER', 536)">Add to Cart</i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="assets/img/PIONEER AGRO BIO NPK FERTILIZER.png" alt="" class="product-img">
+                <h2 class="product-title">PIONEER AGRO BIO NPK FERTILIZER</h2>
+                <span class="product-price"> ₹ 1009 </span>
+                <h6 >
+                    Bio NPK is a Bacterial Consortium Which is able to fix Atmospheric Nitrogen, Solubilize phosphate and mobilize potash, Zinc and Silica into Available Form, There by supplementing balance nutrition to the crops.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('PIONEER AGRO BIO NPK FERTILIZER', 1009)">Add to Cart</i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="assets/img/Pramukh (191919) Water Soluble Complex Fertilizer.png" alt="" class="product-img">
+                <h2 class="product-title">Pramukh (19:19:19) Water Soluble Complex Fertilizer</h2>
+                <span class="product-price"> ₹266</span>
+                <h6>
+                    Geolife Tabsil Fa is a unique effervesant tablet product rich high ortho-silicic acid (OSA) required for plant development.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('Pramukh 19:19:19 Water Soluble Complex Fertilizer', 266)">Add to Cart</i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="assets/img/ANSHUL SULPHUR LIQUID.png" alt="" class="product-img">
+                <h2 class="product-title"> ANSHUL SULPHUR LIQUID (FERTILIZER)</h2>
+                <span class="product-price"> ₹410</span>
+                <h6>
+                    Anshul Sulphur Liquid Fertilizer is formulated to supply sulphur, which is crucial for chlorophyll synthesis and the overall growth and development of plants.
+                </h6>
+                <br>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('ANSHUL SULPHUR LIQUID', 410)">Add to Cart</i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="assets/img/Nano Fert 191919 Fertilizer.png" alt="" class="product-img">
+                <h2 class="product-title">Nano Fert 19:19:19 Fertilizer</h2>
+                <span class="product-price"> ₹799</span>
+                <h6>
+                    Geolife Nano Fert 19:19:19 NPK is a 100% water-soluble fertiliser that contains balanced amounts of three essential nutrients: 19% Nitrogen (N), 19% Phosphorus (P), and 19% Potassium (K).
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('Nano Fert 19:19:19 Fertilize', 799)">Add to Cart</i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="assets/img/Trishul Vam Bio Fertilizer.png" alt="" class="product-img">
+                <h2 class="product-title">Trishul Vam Bio Fertilizer</h2>
+                <span class="product-price"> ₹350</span>
+                <h6>
+                    It typically contains a consortium of various microorganisms, including bacteria and fungi, which help improve soil fertility and plant growth by increasing the availability of essential nutrients and promoting root development. 
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('Trishul Vam Bio Fertilize', 350)">Add to Cart</i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="assets/img/T. STANES NUTRIFAST (WATER SOLUBLE FERTILIZER).png" alt="" class="product-img">
+                <h2 class="product-title">T. STANES NUTRIFAST (WATER SOLUBLE FERTILIZER)</h2>
+                <span class="product-price">₹1037</span>
+                <h6>
+                    Nutrifast is a water-soluble fertiliser that contains high-quality macro and micronutrients.
+                    It easily dissolves in water, making it convenient for application through various methods like soil drenching, foliar spraying, and drip irrigation.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('T. STANES NUTRIFAST ', 1037)">Add to Cart</i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="assets/img/ANSHUL VEGETABLE SPECIAL (MICRO NUTRIENT FERTILIZER).png" alt="" class="product-img">
+                <h2 class="product-title">ANSHUL VEGETABLE SPECIAL (MICRO NUTRIENT FERTILIZER)</h2>
+                <span class="product-price"> ₹350</span>
+                <h6>
+                    Anshul Vegetable Special helps in healthy plant growth, which will help the plant to be more tolerant to diseases. It also helps in better fruit setting, resulting in better quality produce & higher yield.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('ANSHUL VEGETABLE SPECIAL', 350)">Add to Cart</i>
+            </div>
+        </div>
+        <a href="/Agri-Index.html"><button>Back</button></a>
+        <a href="/Insecticides/Insecticides.html"> <button >Next</button></a>
+    </section>
+    <script type="module">
+        // Import Firebase functions using Firebase v9 modular syntax
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAMgNxTRc1TJjF_-n37DV8Fr83oSWNSrCM",
+            authDomain: "agri-c041f.firebaseapp.com",
+            projectId: "agri-c041f",
+            storageBucket: "agri-c041f.appspot.com",
+            messagingSenderId: "1093820225983",
+            appId: "1:1093820225983:web:92e49ab20e887fb141a90a",
+            measurementId: "G-7KTFBS7PYL"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // Add product to Firestore
+     // Add product to Firestore
+window.addToCart = async function(productName, productPrice) {
+    try {
+        const docRef = await addDoc(collection(db, "cart"), {
+            name: productName,
+            price: productPrice
+        });
+        alert(`${productName} has been added to the cart!`);
+        console.log("Document successfully written with ID: ", docRef.id);
+    } catch (error) {
+        console.error("Error adding document: ", error);
+    }
+};
+
+    </script>
+
+    <!-- link js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

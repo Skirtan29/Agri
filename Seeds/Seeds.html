@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri-Supply</title>
+
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+    <!-- styles  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <!-- NAV  -->
+        <div class="nav container">
+            <a href="/Agri-Index.html" class="logo"><span>Agri</span>Supply</a>
+
+            <!-- CART ICON  -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content"></div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <a href="/Checkout/checkout.html">
+                    <button type="button" class="btn-buy">Buy Now</button>
+                </a>
+
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title">Seeds</h2>
+
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="assets/img/ABHISHEK BITTER GOURD SEEDS.png" alt="" class="product-img">
+                <h2 class="product-title">SAAHO TOMATO SEEDS</h2>
+                <span class="product-price">₹983</span>
+                <h6 class="till">
+                    Saaho Tomato Seeds is a high-yielding determinate tomato hybrid developed by Syngenta. It is known for its excellent fruit quality and high fruit firmness.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('SAAHO TOMATO SEEDS', 983)">Add to Cart</i>
+            </div>
+        
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="assets/img/TEJASWINI CHILLI.png" alt="" class="product-img">
+                <h2 class="product-title">TEJASWINI CHILLI</h2>
+                <span class="product-price">₹550</span>
+                <h6>
+                    Tejaswini Chilli is known for its vibrant color and spicy flavor, perfect for a variety of dishes. It grows in well-drained soil and requires moderate watering.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('TEJASWINI CHILLI', 550)">Add to Cart</i>
+            </div>
+        
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="assets/img/MAHY GULSHAN BRINJAL.png" alt="" class="product-img">
+                <h2 class="product-title">MAHY GULSHAN BRINJAL</h2>
+                <span class="product-price">₹146</span>
+                <h6>
+                    Mahy Gulshan Brinjal is a premium hybrid variety with excellent resistance to common brinjal diseases, yielding delicious, firm fruits.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('MAHY GULSHAN BRINJAL', 146)">Add to Cart</i>
+            </div>
+        
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="assets/img/ABHISHEK BITTER GOURD SEEDS.png" alt="" class="product-img">
+                <h2 class="product-title">BITTER GOURD SEEDS</h2>
+                <span class="product-price">₹731</span>
+                <h6>
+                    Bitter Gourd is a popular vegetable known for its medicinal properties, including blood sugar regulation and immune system support.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('BITTER GOURD SEEDS', 731)">Add to Cart</i>
+            </div>
+        
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="assets/img/GULFAM WATERMELON.png" alt="" class="product-img">
+                <h2 class="product-title">GULFAM WATERMELON</h2>
+                <span class="product-price">₹433</span>
+                <h6>
+                    Gulfam Watermelon is a juicy and refreshing fruit with excellent sweetness, perfect for hot summer days.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('GULFAM WATERMELON', 433)">Add to Cart</i>
+            </div>
+        
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="assets/img/NS 915 F1 Hybrid Muskmelon Seeds.png" alt="" class="product-img">
+                <h2 class="product-title">NS 915 F1 Hybrid Muskmelon Seeds</h2>
+                <span class="product-price">₹936</span>
+                <h6>
+                    NS 915 F1 Hybrid Muskmelon produces sweet, juicy fruits with a delightful aroma, great for salads and desserts.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('NS 915 F1 Hybrid Muskmelon Seeds', 936)">Add to Cart</i>
+            </div>
+        
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="assets/img/IRIS HYBRID PAPAYA SEEDS.png" alt="" class="product-img">
+                <h2 class="product-title">IRIS HYBRID PAPAYA SEED</h2>
+                <span class="product-price">₹208</span>
+                <h6>
+                    Iris Hybrid Papaya is known for its high yield and deliciously sweet fruit, making it a favorite for tropical climates.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('IRIS HYBRID PAPAYA SEED', 208)">Add to Cart</i>
+            </div>
+        
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="assets/img/GOLDEN GLORY MUSKMELON.png" alt="" class="product-img">
+                <h2 class="product-title">GOLDEN GLORY MUSKMELON (गोल्डन ग्लोरी)</h2>
+                <span class="product-price">₹1650</span>
+                <h6>
+                    Golden Glory Muskmelon is a high-yield variety known for its golden skin and sweet, succulent flesh.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('GOLDEN GLORY MUSKMELON', 1650)">Add to Cart</i>
+            </div>
+        </div>
+        
+        <a href="/Agri-Index.html"><button>Back</button></a>
+        <a href="/Insecticides/Insecticides.html"> <button>Next</button></a>
+    </section>
+
+    <!-- Firebase Integration -->
+    <script type="module">
+        // Import Firebase functions using Firebase v9 modular syntax
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAMgNxTRc1TJjF_-n37DV8Fr83oSWNSrCM",
+            authDomain: "agri-c041f.firebaseapp.com",
+            projectId: "agri-c041f",
+            storageBucket: "agri-c041f.appspot.com",
+            messagingSenderId: "1093820225983",
+            appId: "1:1093820225983:web:92e49ab20e887fb141a90a",
+            measurementId: "G-7KTFBS7PYL"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // Add product to Firestore
+     // Add product to Firestore
+window.addToCart = async function(productName, productPrice) {
+    try {
+        const docRef = await addDoc(collection(db, "cart"), {
+            name: productName,
+            price: productPrice
+        });
+        alert(`${productName} has been added to the cart!`);
+        console.log("Document successfully written with ID: ", docRef.id);
+    } catch (error) {
+        console.error("Error adding document: ", error);
+    }
+};
+
+    </script>
+
+    <!-- link js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

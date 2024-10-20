@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri-Supply</title>
+
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+    
+    <!-- styles  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <!-- NAV  -->
+        <div class="nav container">
+            <a href="/Agri-Index.html " class="logo"><span>Argi</span>Supply</a>
+            <!-- CART ICON  -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <a href="/Checkout/checkout.html"><button type="button" class="btn-buy">checkout</button></a>
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title">Insecticides</h2>
+
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="assets/img/Exponus Insecticide.png" alt="" class="product-img">
+                <h2 class="product-title"> Exponus Insecticide </h2>
+                <span class="product-price"> ₹ 555.00</span>
+                <span class="product-price">  1 ltr</span>
+                <h6 class="till">
+                    Exponus Basf Insecticide is a revolutionary insecticide that gives you the power over difficult insects.Exponus technical name - Broflanilide 300G/L SC .Exponus insecticide is powerful and versatile insecticide for farmers who want the top performing pest control.
+                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('Exponus Insecticide', 555)">Add to Cart</i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="assets/img/ECONEEM PLUS.png" alt="" class="product-img">
+                <h2 class="product-title">ECONEEM PLUS</h2>
+                <span class="product-price"> ₹ 466.00</span>
+                <span class="product-price">  1 ltr</span>
+                <h6 >
+                    Eco neem plus is a Neem based biopesticide with a blend of 10,000 ppm Azadirachtin and Neem oil, providing all the liminoids for an effective insecticidal action.                </h6>
+                <br>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('ECONEEM PLUS', 466)">Add to Cart</i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="assets/img/Thrips Raze Bio Pesticide.png" alt="" class="product-img">
+                <h2 class="product-title">Thrips Raze Bio Pesticide</h2>
+                <span class="product-price"> ₹ 304.00</span>
+                <span class="product-price"> 1 ltr</span>
+                <h6>
+                    Thrips Raze is an innovative bio-insecticide manufactured by using marker compounds from botanical extracts for the effective control of thrips insects.It can be used against many thrips species that infest different crops.                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('Thrips Raze Bio Pesticide', 304)">Add to Cart</i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="assets/img/Metarhizium Bio Pesticide.png" alt="" class="product-img">
+                <h2 class="product-title"> Metarhizium Bio Pesticide</h2>
+                <span class="product-price">₹ 455.00</span>
+                <span class="product-price"> 1 ltr</span>
+                <h6>
+                    Metarhizium anisopliae (Min. 1x108 CFU /ml for Liquid Based & min. 1x 108 CFU /gm in Carrier Based).Metarhizium produces several secondary metabolites acting as mycotoxins (Insecticidal toxins).
+                                </h6>
+                <br>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('Metarhizium Bio Pesticide', 455)">Add to Cart</i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="assets/img/PATIL BIOTECH AMRUT GOLD NEEM -10000.png" alt="" class="product-img">
+                <h2 class="product-title">PATIL BIOTECH AMRUT GOLD NEEM -10000</h2>
+                <span class="product-price"> ₹ 1465.00</span>
+                <span class="product-price"> 1 ltr</span>
+                <h6>
+                    This is mixture of neem oil & emulsifier. It is useful to reduce impact of sucking pest and caterpillar .It improves effectiveness of pesticides when blended in spray tank.                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('PATIL BIOTECH AMRUT GOLD NEEM -10000', 1465)">Add to Cart</i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="assets/img/Zeal Organic Neem Oil.png" alt="" class="product-img">
+                <h2 class="product-title">Zeal Organic Neem Oil</h2>
+                <span class="product-price"> ₹ 1182.00</span>
+                <span class="product-price"> 1 ltr</span>
+                <h6>
+                    Neem oil is an emulsifiable, eco-friendly, and biodegradable solution that contains Azadirachtin, a compound known for its ability to repel and control various pests such as aphids, black spot, rust, spider mites, fleas, fungus gnats, whiteflies, mosquitoes, and more. It acts as a plant insecticide, fungicide, and miticide, making it a versatile solution for pest and disease management in both indoor and outdoor settings.                </h6>
+                <br>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('Zeal Organic Neem Oil', 1182)">Add to Cart</i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="assets/img/AMRUT GOLD NEEM 100000.png" alt="" class="product-img">
+                <h2 class="product-title">IAMRUT GOLD NEEM 100000</h2>
+                <span class="product-price"> ₹ 2599.00</span>
+                <span class="product-price"> 
+                    500 ml</span>
+                <h6>
+                    Amrut gold neem 1000000 harnesses the natural power of neem tree to protect plants .this gentle solution disrupts insect and growth cycles, combating wide range of pest like aphid and whiteflies. It is safe for benefial insects making it popular choice it break down in the environment minimizing it environmental impact.                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('IAMRUT GOLD NEEM 100000', 2599)">Add to Cart</i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="assets/img/Dhanpreet Insecticide.png" alt="" class="product-img">
+                <h2 class="product-title">Dhanpreet Insecticide</h2>
+                <span class="product-price">₹ 930.00</span>
+                <span class="product-price">  500 gms (pack of 100 gms × 5)</span>
+                <h6>
+                    Dhanpreet Insecticide is a soluble powder formulation containing 20% of the active ingredient Acetamiprid.
+                    Dhanpreet is a world-renowned insecticide of Neonicotinoids group for sucking insects.
+                    It is a highly effective systemic insecticide for the control of aphids, jassids and whiteflies in various crops.                </h6>
+                <br>
+                <i class='bx bx-shopping-bag add-cart' onclick="addToCart('Dhanpreet Insecticide', 930)">Add to Cart</i>
+            </div>
+        </div>
+        
+        <a href="/Agri-Index.html"><button>Back</button></a>
+        <a href="/Insecticides/Insecticides.html"> <button >Next</button></a>
+    </section>
+    <script type="module">
+        // Import Firebase functions using Firebase v9 modular syntax
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAMgNxTRc1TJjF_-n37DV8Fr83oSWNSrCM",
+            authDomain: "agri-c041f.firebaseapp.com",
+            projectId: "agri-c041f",
+            storageBucket: "agri-c041f.appspot.com",
+            messagingSenderId: "1093820225983",
+            appId: "1:1093820225983:web:92e49ab20e887fb141a90a",
+            measurementId: "G-7KTFBS7PYL"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // Add product to Firestore
+     // Add product to Firestore
+window.addToCart = async function(productName, productPrice) {
+    try {
+        const docRef = await addDoc(collection(db, "cart"), {
+            name: productName,
+            price: productPrice
+        });
+        alert(`${productName} has been added to the cart!`);
+        console.log("Document successfully written with ID: ", docRef.id);
+    } catch (error) {
+        console.error("Error adding document: ", error);
+    }
+};
+
+    </script>
+
+    <!-- link js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
