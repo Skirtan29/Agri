@@ -1,297 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agri-Supply</title>
-    <link rel="stylesheet" href="Agr-Supply.css">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agri-Supply</title>
+  <link rel="stylesheet" href="Agr-Supply.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-<!-- NavBar --> 
- <header>
-  <a href="Agri-Index.html" class="logo"><span>Agri-Supply</span></a>
-  <ul class="NavBar">
-    <li><a href="" class="active">Home</a></li>
-    <li><a href="">About Us</a></li>
-    <li><a href="">Services</a></li>
-    <li><a href="/Selection.html">Fertilizer Calculator</a></li>
- 
-  </ul>
-  <div class="main">
-    <a href="/Sign-Login Form/signup.html" class="user"><i class='bx bxs-user'></i>Sign In </a>
-    <a href="/Sign-Login Form/login.html">Login </a>
-    <div class="bx bx-menu" id="menu-icon"></div>
-  </div>
-</header>
-<br>
-<br>
+  <!-- NavBar -->
+  <header>
+    <a href="Agri-Index.html" class="logo"><span>Agri-Supply</span></a>
+    <ul class="NavBar">
+      <li><a href="" class="active">Home</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="/Selection.html">Fertilizer Calculator</a></li>
+
+    </ul>
+    <div class="main">
+      <a href="/Sign-Login Form/signup.html" class="user"><i class='bx bxs-user'></i>Sign In </a>
+      <a href="/Sign-Login Form/login.html">Login </a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+  <br>
+  <br>
 
   <!-- Carousel -->
-    
+
   <div class="slider">
     <div class="list">
-        <div class="item">
-            <img src="img/Silder1.png" alt="">
-        </div>
-        <div class="item">
-            <img src="img/Silder2.png" alt="">
-        </div>
-        <div class="item">
-            <img src="img/silder3.png" alt="">
-        </div>
-        <div class="item">
-            <img src="img/2818936.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="img/Silder5.png" alt="">
-        </div>
+      <div class="item">
+        <img src="img/Silder1.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/Silder2.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/silder3.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/2818936.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="img/silder6.png" alt="">
+      </div>
     </div>
     <div class="buttons">
-        <button id="prev"><</button>
-        <button id="next">></button>
+      <button id="prev">
+        << /button>
+          <button id="next">></button>
     </div>
     <ul class="dots">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
-</div>
+  </div>
   <!-- products -->
-<br>
-<br>
-<br>
-<h1 class="products">Categories</h1>
-<br>
-<section class="articles">
-  <!-- BOX 1 -->
-  <article>
-    <div class="article-wrapper">
-      <figure>
-        <img src="img/Seeds.png.jpg" />
-      </figure>
-      <div class="article-body">
-        <h2 >Seeds</h2>
-        <p>
-          The seed is the embryonic stage of the plant life cycle. Most seeds consist of three parts: embryo, endosperm, and seed coat.
-        </p>
-        <br>
-        <a href="/Seeds/Seeds.html"> Read more <span class="sr-only">about this is some title</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </a>
+  <br>
+  <br>
+  <br>
+  <h1 class="products">Categories</h1>
+  <br>
+  <section class="articles">
+    <!-- BOX 1 -->
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="img/Seeds.png.jpg" />
+        </figure>
+        <div class="article-body">
+          <h2>Seeds</h2>
+          <p>
+            The seed is the embryonic stage of the plant life cycle. Most seeds consist of three parts: embryo,
+            endosperm, and seed coat.
+          </p>
+          <br>
+          <a href="/Seeds/Seeds.html"> Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
-  </article>
-  <article>
+    </article>
+    <article>
       <!-- BOX 2 -->
-    <div class="article-wrapper">
-      <figure>
-        <img src="img/fertilizer.png" alt="" />
-      </figure>
-      <div class="article-body">
-        <h2>Fertilizer</h2>
-        <p>
-          Fertilizers are commonly used for growing all crops, with application rates depending on the soil fertility, usually as measured by a soil test and according to the particular crop.
-        </p>
-        <br>
-        <a href="/Fertilizer/Fertiliz.html" >Read more <span class="sr-only">about this is some title</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </a>
+      <div class="article-wrapper">
+        <figure>
+          <img src="img/fertilizer.png" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Fertilizer</h2>
+          <p>
+            Fertilizers are commonly used for growing all crops, with application rates depending on the soil fertility,
+            usually as measured by a soil test and according to the particular crop.
+          </p>
+          <br>
+          <a href="/Fertilizer/Fertiliz.html">Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
     <!-- BOX 3 -->
-  <article>
-    <div class="article-wrapper">
-      <figure>
-        <img src="img/medical.jpg" alt="" />
-      </figure>
-      <div class="article-body">
-        <h2>Insecticides</h2>
-        <p>
-          Insecticides are chemicals used in agriculture to control insect pests that can damage crops or spread disease.
-        </p>
-        <br>
-        <a href="/Insecticides/Insecticides.html">Read more <span class="sr-only">about this is some title</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </a>
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="img/medical.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Insecticides</h2>
+          <p>
+            Insecticides are chemicals used in agriculture to control insect pests that can damage crops or spread
+            disease.
+          </p>
+          <br>
+          <a href="/Insecticides/Insecticides.html">Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
     <!-- BOX 4 -->
-  <article>
-    <div class="article-wrapper">
-      <figure>
-        <img src="img/images.jpg" alt="" />
-      </figure>
-      <div class="article-body">
-        <h2>Animal Husbandry</h2>
-        <p>
-          Common tools include feeding troughs, shearing equipment, and health monitoring devices, all designed to streamline farm operations and enhance efficiency.
-        </p>
-        <br>
-        <a href="/Farm Machinery/Farm Machinery.html  ">Read more <span class="sr-only">about this is some title</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </a>
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="img/images.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Animal Husbandry</h2>
+          <p>
+            Common tools include feeding troughs, shearing equipment, and health monitoring devices, all designed to
+            streamline farm operations and enhance efficiency.
+          </p>
+          <br>
+          <a href="/Farm Machinery/Farm Machinery.html  ">Read more <span class="sr-only">about this is some
+              title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
     <!-- BOX 5 -->
-  <article>
-    <div class="article-wrapper">
-      <figure>
-        <img src="img/farm machinery.png" alt="" />
-      </figure>
-      <div class="article-body">
-        <h2>Farm Machinery</h2>
-        <p>
-          Farm Machinery, mechanical devices, including tractors and implements, used in farming to save labour.
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="img/farm machinery.png" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Farm Machinery</h2>
+          <p>
+            Farm Machinery, mechanical devices, including tractors and implements, used in farming to save labour.
 
-        </p>
-        <br>
-        <a href="/Farm Machinery/Farm Machinery.html">Read more <span class="sr-only">about this is some title</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </a>
+          </p>
+          <br>
+          <a href="/Farm Machinery/Farm Machinery.html">Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
     <!-- BOX 6 -->
-  <article>
-    <div class="article-wrapper">
-      <figure>
-        <img src="img/Schema.jpg" alt="" />
-      </figure>
-      <div class="article-body">
-        <h2>Scheme</h2>
-        <p>
-          The key objective of the Scheme is to provide financial support to farmers suffering from crop loss/damage due to unforeseen natural calamities and events (With minimum premium payment implemented by notified Insurance Company in the State).
-        </p>
-        <br>
-        <a href="/Schema/schema.html">Read more <span class="sr-only">about this is some title</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </a>
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="img/Schema.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Scheme</h2>
+          <p>
+            The key objective of the Scheme is to provide financial support to farmers suffering from crop loss/damage
+            due to unforeseen natural calamities and events (With minimum premium payment implemented by notified
+            Insurance Company in the State).
+          </p>
+          <br>
+          <a href="/Schema/schema.html">Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- Top Products -->
+
+  <div class="banner-wrapper">
+    <div class="banner-container">
+      <div class="banner-img-wrapper">
+        <div class="banner-padding">
+          <div class="banner-abs">
+            <div class="banner-abs-main">
+              <div class="banner-inner-wrapper">
+                <img alt="" class="CoverPhoto" src="/img/banner.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </article>
-</section>
-<br>
-<br>
-<br>
-<br>
-<!-- Top Products -->
+  </div>
 
-
-
-<!-- Top Fretilizer -->
-<h1 class="products">Top Fertilizing Crop</h1>
-<p class="pra">At Agri-Supply Organic Fertilizer, we believe in harnessing the power of technology and nature to revolutionize modern farming practices. Our agriculture drone services, and organic fertilizer products are designed to help farmers increase their crop yields while promoting sustainable and eco-friendly farming methods.</p>
-<ul class="honeycomb">
-  <li class="honeycomb-cell">
+  <!-- Top Fretilizer -->
+  <h1 class="products">Top Fertilizing Crop</h1>
+  <p class="pra">At Agri-Supply Organic Fertilizer, we believe in harnessing the power of technology and nature to
+    revolutionize modern farming practices. Our agriculture drone services, and organic fertilizer products are designed
+    to help farmers increase their crop yields while promoting sustainable and eco-friendly farming methods.</p>
+  <ul class="honeycomb">
+    <li class="honeycomb-cell">
       <img class="honeycomb-cell_img" src="img/Groundnut.jpg">
       <div class="honeycomb-cell_title">Groundnut</div>
-  </li>
-  <li class="honeycomb-cell">
+    </li>
+    <li class="honeycomb-cell">
       <img class="honeycomb-cell_img" src="img/Corn (Maize).jpg">
       <div class="honeycomb-cell_title">Corn</div>
-  </li>
-  <li class="honeycomb-cell">
+    </li>
+    <li class="honeycomb-cell">
       <img class="honeycomb-cell_img" src="img/Cotton.jpg">
       <div class="honeycomb-cell_title">Cotton</div>
-  </li>
-  <li class="honeycomb-cell">
+    </li>
+    <li class="honeycomb-cell">
       <img class="honeycomb-cell_img" src="img/Tobacco.jpg">
       <div class="honeycomb-cell_title">Tobacco</div>
-  </li>
-  <li class="honeycomb-cell">
+    </li>
+    <li class="honeycomb-cell">
       <img class="honeycomb-cell_img" src="img/Banana.jpg">
       <div class="honeycomb-cell_title">Banana</div>
-  </li>
-  <li class="honeycomb-cell">
+    </li>
+    <li class="honeycomb-cell">
       <img class="honeycomb-cell_img" src="img/Paddy.jpg">
       <div class="honeycomb-cell_title">Paddy</div>
-  </li>
-  <li class="honeycomb-cell">
+    </li>
+    <li class="honeycomb-cell">
       <img class="honeycomb-cell_img" src="img/sugar can.jpg">
       <div class="honeycomb-cell_title">Sugarcan</div>
-  </li>
-  <li class="honeycomb-cell honeycomb_Hidden">
-  </li>
-</ul>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<!-- Team Member -->
-<!-- FOoter -->
-<footer class="footer-distributed">
-  <div class="footer-left">
+    </li>
+    <li class="honeycomb-cell honeycomb_Hidden">
+    </li>
+  </ul>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- Team Member -->
+  <!-- FOoter -->
+  <footer class="footer-distributed">
+    <div class="footer-left">
       <h3>Agri<span>Supply</span></h3>
 
       <p class="footer-links">
-          <a href="Agri-Index.html">Home</a>
-          |
-          <a href="#">About</a>
-          |
-          <a href="/Contact Us/Contact Us.html">Contact</a>
-          |
-          <a href="#">Blog</a>
+        <a href="Agri-Index.html">Home</a>
+        |
+        <a href="#">About</a>
+        |
+        <a href="/Contact Us/Contact Us.html">Contact</a>
+        |
+        <a href="#">Blog</a>
       </p>
 
       <p class="footer-company-name">Copyright © 2024 <strong>Agri-Supply</strong> All rights reserved</p>
-  </div>
+    </div>
 
-  <div class="footer-center">
+    <div class="footer-center">
       <div>
-          <i class="fa fa-map-marker"></i>
-          <p><span>Ahemdabad</span>
-              Gujarat</p>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Ahemdabad</span>
+          Gujarat</p>
       </div>
 
       <div>
-          <i class="fa fa-phone"></i>
-          <p>+91 9737437731</p>
+        <i class="fa fa-phone"></i>
+        <p>+91 9737437731</p>
       </div>
       <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:sagar00001.co@gmail.com">AgriSupply24@gmail.com</a></p>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:sagar00001.co@gmail.com">AgriSupply24@gmail.com</a></p>
       </div>
-  </div>
-  <div class="footer-right">
+    </div>
+    <div class="footer-right">
       <p class="footer-company-about">
-          <span>About the Agri-Supply</span>
-          <strong>Agri-Supply</strong> Agri Supplies means any agricultural product (including crops, feed, chemicals and organic or inorganic matter) or general merchandise or any other item specified in an order or instruction which is ordered, sold or acquired under these Terms of Trade.
+        <span>About the Agri-Supply</span>
+        <strong>Agri-Supply</strong> Agri Supplies means any agricultural product (including crops, feed, chemicals and
+        organic or inorganic matter) or general merchandise or any other item specified in an order or instruction which
+        is ordered, sold or acquired under these Terms of Trade.
       </p>
       <div class="footer-icons">
-          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
       </div>
-  </div>
-</footer>
+    </div>
+  </footer>
 </body>
+
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script   src="Agri-Supply.js" defer></script>
+<script src="Agri-Supply.js" defer></script>
