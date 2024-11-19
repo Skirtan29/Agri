@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.CustomBrowser": "chrome",
+    "remote.localPortHost": "localhost",
+    "liveServer.settings.ChromeDebuggingAttachment": true,
+    "liveServer.settings.port": 0 // or "firefox", "edge", etc.
+}
